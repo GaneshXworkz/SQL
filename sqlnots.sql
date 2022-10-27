@@ -82,3 +82,22 @@ Instr:
 substr:
 'BANGLORE'
 		
+	Constantents:
+	constantes used to type of the data when inserting the data into table.
+	constraints are specified to the column while creating the tables.
+	1. not null :this will not accept any null VALUES.
+	2. UNIQUE: THIS CONSTRAIN WILL NOT ACCEPT ANY DUPLICATE VALUES AND IT CAN ACCEPT NULL 
+	3. CHECK CONSTRAIN: used to limate range of an value for the colume.
+	4. DISTINCT : IT IS USED TO AVOID DUBLICTE 
+	5. PRIMARY KEY: 
+	 *when we apply primary key to maltiple columns that
+	 combination should not be same .
+	 
+	  
+	5. foreign key:Fk is a column in one table which 
+	refers to the primary key of the other table.
+	* priamry key will always present in the parent table.
+	* Foreign key will always present in the child table.
+	* priamry key values and foreign key values should be same.
+	
+	
