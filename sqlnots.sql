@@ -53,6 +53,7 @@ ORDER BY:
 	select *from movies order by id;
 	select *from movies order by id desc;
 	desc movies;
+	
 
 
 	SELECT *FROM movies ORDER BY id desc;
@@ -70,6 +71,7 @@ ORDER BY:
 		Select max(bookingAmount)from airportDetailes;
 		Select min(bookingAmount)from airportDetailes;
 		Select avg(bookingAmount)from airportDetailes;
+		select LENGTH
 		
 		
 LIKE : is used for patteren Matching.
@@ -100,4 +102,79 @@ substr:
 	* Foreign key will always present in the child table.
 	* priamry key values and foreign key values should be same.
 	
+	LTRIM :remove the leading space from the string
+	RTRIM :remove the leading space from the string
+	
+	Forigin key can have dublicate VALUES
+	
+
+	
+	revision
+	
+		ALTER TABLE tb_name DROP COLUME col_name datatype;
+		ALTER TABLE tb_name MODIFY col_name datatype;
+		
+		INSERT INTO  td_name(col_name,col_name)
+		
+		UPDATE tb_
+		
+	GROUP BY:
+
+	HAVING : AFTER GROUP BY WE CAN HAVING 
+	HAVING IS USE TO FILTER AFTER THE GROUP BY IS DONE 
+	HAVING IS ALWAYS USE TO AGRIGATE FUCTION
+	HAVING CAN USED WITH ONLY SELECT STATEMENT;
+	HAVING CAN BE USED TO SELECT UPDATE AND DELETE STATEMENT ;
+	HAVING CAN BE USE AFTER GROUP BY AND WHERE CAN BE USE BEFORE GROUP BY
+
+	SELECT> DISTINCT> FROM> WHERE > GROUP BY >HAVING >ORDER BY
+	
+	REVERSE :The REVERSE() function reverses a string and returns the result.
+	
+	PADDING :
+		LPAD :	Left-pads a string with another string, to a certain length
+		LTRIM :	Removes leading spaces from a string
+		REVERSE:	Reverses a string and returns the result
+		RTRIM:	Removes trailing spaces from a string
+	
+	Lock Method :
+		The Lock method prevents other users from modifying the variables in the Application object 
+		(used to ensure that only one client at a time can modify the Application variables).
+
+	Unlock Method:
+		The Unlock method enables other users to modify the variables stored in the Application object
+		(after it has been locked using the Lock method).
+
+	The MySQL LIMIT Clause
+
+		* The LIMIT clause is used to specify the number of records to return.
+
+		* The LIMIT clause is useful on large tables with thousands of records.
+			Returning a large number of records can impact performance.
+
+	SQL CHECK Constraint
+		*The CHECK constraint is used to limit the value range that can be placed in a column.
+
+		*If you define a CHECK constraint on a column it will allow only certain values for this column.
+
+		*If you define a CHECK constraint on a table it can limit the values in certain columns based on
+		values in other columns in the row.
+        
+        CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18)
+	);
+	
+    CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255),
+    CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')
+);
+
 	

@@ -17,6 +17,10 @@ SELECT * FROM college_vecnces;
 
 ALTER TABLE college_vecnces ADD COLUMN total int;
 
+Select * from college_vecnces Where sl_no=1 ;
+select *from college_vecnces where collage_name='GEC shivammoga';
+
+select Sl_no From college_vecnces where sl_no=9;
 
 
 

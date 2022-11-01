@@ -382,6 +382,39 @@ Insert into students_from values(110,'Yaswanta','N.R',18,15/01/2000,6,'AB+','139
 Insert into students_from values(111,'YOGAanda','R',18,5/01/2000,6,'AB+','139cm','43kg','Second Class');
 Insert into students_from values(112,'Monesh','m.R',18,16/01/2000,6,'AB+','139cm','43kg','Second Class');
 
+UPDATE students_from set Date_of_birth =20000515 WHERE reg_no =112;
+update students_from set Date_of_birth =20000115 where reg_no=105;
+ 
+select *from Students_from where reg_no=105;
+
+
+
+select * from Students_from group by result;
+
+/*SELECT colume_name,SUM(colume_name)FROM table_name group by column_name;*/
+select*From Students_from;
+SELECT result,Age,count(age) from Students_from group by result,Age; /*used to find similer type of age how many are there in the age to fetch */
+select blood_group,hight,count(hight)from Students_from group by blood_group,hight;
+select hight from students_from group by hight;
+select last_name from Students_from group by last_name;
+select count(first_name) from Students_from group by Age;
+
+
+/*HAVING */
+SELECT * FROM students_from
+select age ,sum(age) FROM Students_from group by age;
+select age  FROM Students_from group by age;
+select blood_group ,age From students_from group by Blood_group HAVING (age)>17;
+
+select result ,age , count(age )as count from Students_from group by result Having result ='first_calss';
+SELECT name,type_of_acc,count(type_of_acc) from table_name group by type_of_account;
+
+
+
+
+
+
+
 
 
 
