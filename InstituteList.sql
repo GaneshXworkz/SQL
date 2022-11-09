@@ -409,6 +409,8 @@ select blood_group ,age From students_from group by Blood_group HAVING (age)>17;
 select result ,age , count(age )as count from Students_from group by result Having result ='first_calss';
 SELECT name,type_of_acc,count(type_of_acc) from table_name group by type_of_account;
 
+select game_name from commenwealth group by no_of_medals having 
+
 
 
 

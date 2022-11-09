@@ -203,6 +203,19 @@ INSERT into WORLD VALUES(5,'SOUTH AFRICA',12,0,0);
 INSERT into WORLD VALUES(6,'EROUP',44,430759766,5);
 INSERT into WORLD VALUES(7,'SOUTH AMERICA',12,43111704,25);
 
+select ltrim(id) from WORLD;
+select ltrim(continent) from WORLD;
+select ltrim(number_of_contries) from WORLD;
+select ltrim(population) from WORLD;
+select ltrim(Econamy) from WORLD;
+
+select rtrim(id) from WORLD;
+select rtrim(continent) from WORLD;
+select rtrim(number_of_contries) from WORLD;
+select rtrim(population) from WORLD;
+select rtrim(Econamy) from WORLD;
+
+
 SELECT * FROM WORLD order by ID DESC LIMIT 2;
 SELECT * FROM WORLD order by number_of_contries desc limit 2;
 SElect * from world order by number_of_contries desc limit 3;
@@ -276,6 +289,114 @@ unlock tables;
 
 
 select*from WORLD;
+
+/********************************************************************************************************/
+/*makedate:
+2018
+200
+to find particular date in year on that day*/
+
+select makedate(2019,245);
+select makedate(2023,15);
+
+/*Format: use for specify deciaml*/
+
+select format(4646545.465465,4);
+select format(4646545.465465,2);
+select format(4646545.465465,0);
+
+/*DATEADD;*/
+
+select date_add('2022-11-03',interval -5 day);
+select date_add('2022-11-03',interval +5 day);
+  
+ select date_add('2022-11-03',interval 10 minute); 
+ select date_add('2022-11-03',interval 10 year); 
+select date_add('2022-11-03',interval 1 quarter); 
+select date_add('2022-11-03 09:15:20' ,interval 5 second);
+select date_add('2022-11-03 09:15:20' ,interval -5 second);
+select date_add('2022-11-03 09:15:20', interval 5 hour);
+
+select date_add('2022-11-03 09:15:20', interval 5 minute);
+
+
+set OPERATOER;
+
+1)UNION :
+2)UNION ALL
+
+select * FROM a;
+select * from b;
+
+select * from a;
+union
+
+select * from b;
+
+create table a(id int);
+insert into a values(1);
+insert into a values(2);
+insert into a values(3);
+insert into a values(4);
+insert into a values(5);
+insert into a values(6);
+insert into a values(7);
+insert into a values(8);
+insert into a values(9);
+insert into a values(10);
+insert into a values(11);
+insert into a values(13);
+insert into a values(14);
+
+
+create table b(id int);
+insert into b values(2);
+insert into b values(3);
+insert into b values(4);
+insert into b values(5);
+insert into b values(6);
+insert into b values(7);
+insert into b values(8);
+insert into b values(9);
+insert into b values(15);
+insert into b values(16);
+
+
+select id from a
+union 
+ select id from b;
+
+
+
+
+
+Create table metro(id int, m_name varchar(30),source varchar(40),dest varchar(40));
+alter table metro add column ticket int;
+
+desc metro;
+
+insert into metro values(1,'nammametro','nagsandra','mejastic ',20);
+insert into metro values(2,'nammametro','Kuvempu nagar','mejastic ',20);
+insert into metro values(3,'nammametro','indra point','mejastic ',20);
+insert into metro values(4,'nammametro','pennay','mejastic ',20);
+insert into metro values(5,'nammametro','birappan halli','mejastic ',20);
+insert into metro values(6,'nammametro','Ashokpuram','mejastic ',20);
+insert into metro values(7,'nammametro','Devanhalli','mejastic ',20);
+insert into metro values(8,'nammametro','srirampur','mejastic ',20);
+insert into metro values(9,'nammametro','nagsandra','mejastic ',20);
+insert into metro values(10,'nammametro','nagsandra','mejastic ',20);
+
+
+insert into train 
+
+/**************************************************************************************************************/
+
+
+
+
+
+
+
 
 
 

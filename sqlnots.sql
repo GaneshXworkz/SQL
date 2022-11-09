@@ -177,4 +177,45 @@ substr:
     CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')
 );
 
+
+	set OPERATOR 
+	it is use to combinE the data from two table
+	UNION: cobine the two or more operator to uniqe operation and avoid the dublicate value 
+	
+	The SQL UNION Operator
+		The UNION operator is used to combine the result-set of two or more SELECT statements.
+
+	*Every SELECT statement within UNION must have the same number of columns
+	*The columns must also have similar data types
+	*The columns in every SELECT statement must also be in the same order
+	
+	SELECT column_name(s) FROM table1
+	UNION
+	SELECT column_name(s) FROM table2;
+	
+	
+	JOINS: 
+	* JOINTS WILL COMBIDE THE COLUME VALUES FROM one table
+	
+	* INNER jOIN :combine the commen values from both the tables and returens the single values.
+		select table_name.column_name ,table2_name.colume
+	* LEFT JOIN: 
+	
+	
+	
+	
+	CROSS JOINTS:
+	
+	
+		Here are the different types of the JOINs in SQL:
+		
+		JOINT : JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+	(INNER) JOIN:		Returns records that have matching values in both tables
+	LEFT (OUTER) JOIN: 	Returns all records from the left table, and the matched records from the right table
+	RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+	FULL (OUTER) JOIN:  Returns all records when there is a match in either left or right table
+	SQL INNER JOIN  SQL LEFT JOIN  SQL RIGHT JOIN  SQL FULL OUTER JOIN
+	
+	
 	
